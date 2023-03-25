@@ -29,7 +29,7 @@ public class PaymentServiceImpl implements PaymentService {
 
         Spot bookedSpot = reservation.getSpot();
 
-        int bill = reservation.getNumOfHours() * bookedSpot.getPricePerHour();
+        int bill = reservation.getNumberOfHours() * bookedSpot.getPricePerHour();
 
         //check if amount == bill
         if(amountSent<bill){

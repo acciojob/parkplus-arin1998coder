@@ -9,8 +9,6 @@ import com.driver.services.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 public class ReservationServiceImpl implements ReservationService {
     @Autowired
@@ -78,7 +76,7 @@ public class ReservationServiceImpl implements ReservationService {
         //occupie the spot
         bookedSpot.setOccupied(true);
 
-        reservation.setNumOfHours(timeInHours);
+        reservation.setNumberOfHours(timeInHours);
         reservation.setSpot(bookedSpot);
         reservation.setUser(user);
 
