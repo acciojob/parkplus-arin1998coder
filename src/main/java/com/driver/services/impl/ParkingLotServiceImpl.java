@@ -60,9 +60,9 @@ public class ParkingLotServiceImpl implements ParkingLotService {
     public void deleteSpot(int spotId) {
 
         //delete a spot from given parking lot
-        Spot spot = spotRepository1.findById(spotId).get();
+//        Spot spot = spotRepository1.findById(spotId).get();
 
-        spot.getParkingLot().getSpotList().remove(spot);
+//        spot.getParkingLot().getSpotList().remove(spot);
 
         spotRepository1.deleteById(spotId);
     }
